@@ -7,7 +7,7 @@ services:
 
   pymongo_api:
     container_name: pymongo_api
-    build: 
+    build:
       context: api_app
       dockerfile: Dockerfile
     depends_on:
@@ -17,7 +17,6 @@ services:
     environment:
       MONGODB_URL: "mongodb://mongodb1"
       MONGODB_DATABASE_NAME: "somedb"
-
 
 volumes:
   mongodb1_data_container:
